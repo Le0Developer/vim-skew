@@ -1,1 +1,1 @@
-au BufNewFile,BufRead *.skew set filetype=skew
+au BufNewFile,BufRead *.sk set filetype=skew
