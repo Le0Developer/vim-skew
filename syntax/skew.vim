@@ -54,7 +54,7 @@ syn match   skewClassName "\<[A-Za-z_][A-Za-z0-9_]\*\>"
 syn match   skewIdentifier "\<[A-Za-z_][A-Za-z0-9_]\*\>"
 
 " Strings
-syn region  skewString start="'" end="'" contains=skewEscape
+syn region  skewCharacter start="'" end="'"
 syn region  skewString start="\"" end="\"" contains=skewEscape,skewInterpolatedString
 
 " Escape Sequences
@@ -72,6 +72,7 @@ hi def link skewNumberDecimal Constant
 hi def link skewNumberBinary Constant
 hi def link skewNumberOctal Constant
 hi def link skewNumberHexadecimal Constant
+hi def link skewCharacter Constant
 hi def link skewAnnotation Keyword
 hi def link skewType Type
 hi def link skewFunctionDef Keyword
@@ -82,6 +83,5 @@ hi def link skewClassName Type
 hi def link skewTypeIdentifier Type
 hi def link skewString String
 hi def link skewEscape SpecialChar
-hi def link skewInterpolatedString String
 
 let b:current_syntax = "skew"
