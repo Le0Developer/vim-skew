@@ -61,7 +61,7 @@ syn region  skewString start="\"" end="\"" contains=skewEscape,skewInterpolatedS
 syn match   skewEscape "\\."
 
 " Interpolated Strings
-syn region  skewInterpolatedString start="\\(" end="\\)"
+syn region  skewInterpolatedString start="\\(" end=")"
 
 " Define highlighting
 hi def link skewComment Comment
